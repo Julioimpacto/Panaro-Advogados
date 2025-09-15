@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos - Panaro Advogados</title>
+    <link rel="icon" type="image/jpeg" href="imagens/favicon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-content {
+            line-height: 1.8;
+        }
+        
+        .article-content h2 {
+            color: #f59e0b;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content h3 {
+            color: #f59e0b;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .article-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-button {
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+        
+        /* Mobile First - Base styles for mobile */
+        .hero-section {
+            min-height: auto;
+            padding: 2rem 0;
+        }
+        
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+        }
+        
+        /* Desktop and up */
+        @media (min-width: 1024px) {
+            .hero-section {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Navigation -->
+    <header class="absolute top-0 left-0 right-0 z-50 bg-transparent">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="imagens/logo.jpg" alt="Panaro Advogados" class="h-12 md:h-16 w-auto">
+                </div>
+                
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex items-center justify-center space-x-6 flex-1">
+                    <a href="index.html" class="text-white hover:text-yellow-300 transition-colors duration-300">Início</a>
+                    <a href="index.html#areas-atuacao" class="text-white hover:text-yellow-300 transition-colors duration-300">Áreas de Atuação</a>
+                    <a href="index.html#equipe" class="text-white hover:text-yellow-300 transition-colors duration-300">Nossa Equipe</a>
+                    <a href="artigos.html" class="text-yellow-300 font-semibold">Artigos</a>
+                    <a href="index.html#contato" class="text-white hover:text-yellow-300 transition-colors duration-300">Contato</a>
+                </div>
+                
+                <!-- WhatsApp Icon -->
+                <a href="https://wa.me/5511921386809" target="_blank" class="hidden md:block text-white hover:text-yellow-300 transition-colors duration-300 mr-4">
+                    <i class="fab fa-whatsapp text-4xl"></i>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 bg-black bg-opacity-80 rounded-lg p-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-white hover:text-yellow-300 transition-colors duration-300">Início</a>
+                    <a href="index.html#areas-atuacao" class="text-white hover:text-yellow-300 transition-colors duration-300">Áreas de Atuação</a>
+                    <a href="index.html#equipe" class="text-white hover:text-yellow-300 transition-colors duration-300">Nossa Equipe</a>
+                    <a href="artigos.html" class="text-yellow-300 font-semibold">Artigos</a>
+                    <a href="index.html#contato" class="text-white hover:text-yellow-300 transition-colors duration-300">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Cover Image -->
+    <section class="relative" style="background-image: url('imagens/artigos.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 60vh;">
+        <!-- Overlay escuro para legibilidade -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        
+        <!-- Botão Voltar - Fixo na foto de capa -->
+        <div class="absolute bottom-6 right-6 z-20">
+            <a href="index.html" class="back-button inline-flex items-center bg-white shadow-lg px-4 py-2 rounded-lg text-gray-700 hover:text-yellow-600 hover:bg-yellow-50 transition-all duration-300">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Voltar ao Início
+            </a>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[60vh]">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Título Principal -->
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                    Artigos <span class="text-yellow-300">Jurídicos</span>
+                </h1>
+                
+                <!-- Subtítulo -->
+                <p class="text-white text-lg md:text-xl opacity-90">
+                    Conhecimento especializado em direito tributário e imobiliário
+                </p>
+                
+                <!-- Separador -->
+                <div class="w-24 h-1 bg-yellow-300 mx-auto mt-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Article Header -->
+                <div class="mb-8">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                        A Reforma Tributária e o Direito Imobiliário
+                    </h2>
+                    <div class="flex items-center text-gray-600 text-sm md:text-base">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Publicado em: Janeiro 2025</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-user mr-2"></i>
+                        <span>Dr. Fernando Panaro</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-building mr-2"></i>
+                        <span>Farol Jurídico</span>
+                    </div>
+                    
+                    <!-- Article Featured Image -->
+                    <div class="mt-6 mb-8">
+                        <img src="imagens/martelo.jpg" alt="Martelo da Justiça - Direito Tributário e Imobiliário" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content text-gray-700 text-base md:text-lg">
+                    <p class="text-lg md:text-xl leading-relaxed mb-6">
+                        A reforma tributária e o direito imobiliário estão conectados principalmente por meio de mudanças nas tributações que incidem sobre as transações imobiliárias, como a compra, venda, aluguel e a construção de imóveis. A reforma pode alterar tanto a carga tributária quanto os tipos de impostos que afetam o setor imobiliário, impactando diretamente as práticas e operações do mercado imobiliário.
+                    </p>
+
+                    <p class="mb-6">
+                        Aqui estão algumas formas em que a reforma tributária pode influenciar o direito imobiliário:
+                    </p>
+
+                    <h2>1. Impostos sobre a Propriedade Imobiliária</h2>
+                    <p>
+                        A reforma tributária pode afetar impostos como o IPTU (Imposto Predial e Territorial Urbano) e o ITR (Imposto Territorial Rural), que incidem sobre a propriedade de imóveis urbanos e rurais. Dependendo das mudanças nas alíquotas ou nas regras de isenção, as pessoas que possuem imóveis podem ser impactadas com valores mais altos ou mais baixos desses tributos.
+                    </p>
+
+                    <h2>2. Imposto sobre a Renda (IR) e Ganhos de Capital</h2>
+                    <p>
+                        A venda de imóveis envolve o pagamento do Imposto de Renda sobre Ganhos de Capital. Dependendo das alterações na tributação desse imposto, pode haver mudanças nos custos envolvidos em transações de compra e venda de imóveis, tanto para pessoas físicas quanto jurídicas. Por exemplo, se a reforma mudar as alíquotas ou os critérios de cálculo do IR sobre esses ganhos, isso pode afetar a rentabilidade de quem negocia imóveis.
+                    </p>
+
+                    <h2>3. Imposto sobre Circulação de Mercadorias e Serviços (ICMS)</h2>
+                    <p>
+                        Se a reforma tributária modificar o sistema de ICMS, isso pode afetar as construções de imóveis. O ICMS é um imposto estadual, e ele pode incidir sobre materiais de construção e outros itens utilizados na edificação de imóveis. A reforma pode criar um impacto nos custos de construção e, consequentemente, no preço final dos imóveis.
+                    </p>
+
+                    <h2>4. Impostos sobre Transações Imobiliárias: ITBI e ITCMD</h2>
+                    <p>
+                        O ITBI (Imposto de Transmissão de Bens Imóveis) e o ITCMD (Imposto sobre Transmissão Causa Mortis e Doação) também podem ser afetados. A reforma pode alterar as alíquotas ou a base de cálculo desses impostos, impactando o custo de adquirir um imóvel ou de recebê-lo por herança ou doação.
+                    </p>
+
+                    <h2>5. Sistemas de Tributação das Empresas Imobiliárias</h2>
+                    <p>
+                        Empresas que atuam no mercado imobiliário, como construtoras, incorporadoras e administradoras de imóveis, podem ser afetadas pela reforma tributária, que pode modificar a forma como os impostos são aplicados. Por exemplo, uma reforma que simplifique ou modifique o Sistema de Tributação do Lucro Presumido ou Lucro Real pode impactar a forma como essas empresas calculam e pagam seus impostos.
+                    </p>
+
+                    <h2>6. Possível Criação de um Imposto sobre Valor Agregado (IVA)</h2>
+                    <p>
+                        A substituição de impostos indiretos como o ISS (Imposto Sobre Serviços) e o ICMS por um único imposto, como o IVA (Imposto sobre Valor Agregado), pode simplificar o sistema tributário, mas também pode afetar a forma como os serviços imobiliários são tributados. Por exemplo, as taxas de IVA sobre serviços de corretagem, construção e administração imobiliária podem ser diferentes das atuais.
+                    </p>
+
+                    <h2>7. Incentivos para o Setor Imobiliário</h2>
+                    <p>
+                        Algumas reformas tributárias podem buscar incentivar o setor imobiliário com a criação de incentivos fiscais para construção de imóveis ou para financiamentos habitacionais. Modificações nos impostos podem estimular o mercado de imóveis, o que influencia diretamente a oferta e a demanda no setor.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        A reforma tributária, ao modificar a estrutura de impostos e a forma como são cobrados, tem um impacto direto no custo e na rentabilidade das operações imobiliárias, tanto para o consumidor final quanto para as empresas do setor. Portanto, profissionais de direito imobiliário devem estar atentos às mudanças nas leis tributárias para ajustar contratos, estratégias de negócios e entender as implicações jurídicas dessas modificações.
+                    </p>
+                </div>
+
+                <!-- Article Footer -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-gray-600 text-sm">
+                                <strong>Autor:</strong> Dr. Fernando Panaro<br>
+                                <strong>Publicação:</strong> Farol Jurídico<br>
+                                <strong>Especialidade:</strong> Direito Tributário e Imobiliário
+                            </p>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://wa.me/5511921386809" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Fale Conosco
+                            </a>
+                            <a href="index.html#contato" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                                <i class="fas fa-envelope mr-2"></i>
+                                Contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">
+                    Mais Artigos em Breve
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Placeholder for future articles -->
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-alt text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Direito Tributário</h4>
+                        <p class="text-gray-600 text-sm">Artigos sobre legislação tributária e suas implicações</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-gavel text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Direito Administrativo</h4>
+                        <p class="text-gray-600 text-sm">Análises sobre licitações e contratos administrativos</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-home text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Direito Imobiliário</h4>
+                        <p class="text-gray-600 text-sm">Orientações sobre transações e propriedade imobiliária</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 text-white text-sm sm:text-base">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 px-4 text-center relative">
+            <span>&copy; <span id="ano-atual"></span> Panaro Advogados. Todos os direitos reservados.</span>
+            <div class="flex items-center gap-1 mt-2 sm:mt-0">
+                <span>Produzido por:</span>
+                <img src="imagens/footerj3.png" alt="Logo J3" class="h-6 sm:h-8">
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511921386809" target="_blank" class="fixed bottom-6 right-6 z-50">
+        <div class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-4xl"></i>
+        </div>
+    </a>
+
+    <script>
+        // Atualizar ano automaticamente no footer
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
